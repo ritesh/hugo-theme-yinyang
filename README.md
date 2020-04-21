@@ -1,4 +1,5 @@
 # YinYang
+This is a fork of the Yin & Yang theme mostly to tune a few things to my lliking 
 
 [YinYang](https://en.wikipedia.org/wiki/Yin_and_yang) is a black-white theme for [Hugo](https://gohugo.io/).
 
