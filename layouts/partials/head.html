@@ -35,15 +35,22 @@
   {{ end }}
 
   <link rel="stylesheet" href="{{ .Site.Params.staticPrefix }}{{ "css/flexboxgrid-6.3.1.min.css" | relURL }}" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
   {{ if not .IsHome -}}
-  <link rel="stylesheet" href="{{ .Site.Params.staticPrefix }}{{ "css/github-markdown.css" | relURL }}" />
-  <link rel="stylesheet" href="{{ .Site.Params.staticPrefix }}{{ "css/highlight/tomorrow.min.css" | relURL }}" />
+  <!-- <link rel="stylesheet" href="{{ .Site.Params.staticPrefix }}{{ "css/github-markdown.css" | relURL }}" /> -->
+  <!-- <link rel="stylesheet" href="{{ .Site.Params.staticPrefix }}{{ "css/highlight/tomorrow.min.css" | relURL }}" /> -->
   {{- end }}
   <link rel="stylesheet" href="{{ "css/index.css" | relURL }}">
   <link href="{{ .Site.Params.staticPrefix }}{{ "index.xml" | relURL }}" rel="alternate" type="application/rss+xml"
-    title="{{ .Site.Title }}">
+        title="{{ .Site.Title }}">
   <!-- fonts -->
- <link href="https://fonts.googleapis.com/css2?family=Muli&family=Rock+Salt&display=swap" rel="stylesheet"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Proza+Libre:ital@1&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Proza+Libre:ital@0;1&display=swap" rel="stylesheet">
   <!-- quicklink require -->
   <!-- <script>
     /* Disable minification (remove `.min` from URL path) for more info 
